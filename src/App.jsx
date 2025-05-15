@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { candidates, stages } from './data/candidates';
+import Column from './components/Column';
+import Modal from './components/Modal';
+import './styles/App.css';
 
-function App() {
+const App = () => {
+  const [selectedCandidate, setSelectedCandidate] = useState(null);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <h1>Recruitment Pipeline</h1>
+      <div className="kanban">
+        {stages.map(stage => (
+          <Column
+            key={stage}
+            title={stage}
+            candidates={candidates.filter(c => c.stage === stage)}
+            onCardClick={setSelectedCandidate}
+          />
+        ))}
+      </div>
+      <Modal candidate={selectedCandidate} onClose={() => setSelectedCandidate(null)} />
     </div>
   );
-}
+};
 
 export default App;

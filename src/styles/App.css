@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+.app-container {
+  padding: 1rem;
+  font-family: sans-serif;
+}
+
+.kanban {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  font-size: 24px;
+  color: #2f3542;
+}
+

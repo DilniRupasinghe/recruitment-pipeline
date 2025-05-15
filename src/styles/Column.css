@@ -1,0 +1,16 @@
+.column {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1rem;
+  min-width: 260px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.column h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #555;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import './CandidateCard.css';
+import '../styles/CandidateCard.css';
 
 const CandidateCard = ({ candidate, onClick }) => (
   <div className="card" onClick={() => onClick(candidate)}>
