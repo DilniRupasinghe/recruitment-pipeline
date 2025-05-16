@@ -5,6 +5,8 @@ import Modal from './components/Modal';
 import './styles/App.css';
 import Header from './components/Header';
 import './styles/Header.css';	
+import NavigationTabs from './components/NavigationTabs';
+import JobHeader from './components/JobHeader';
 
 const App = () => {
   const [selectedCandidate, setSelectedCandidate] = useState(null);
@@ -12,8 +14,9 @@ const App = () => {
   return (
     <>
     <Header/>
+    <JobHeader/>
+    <NavigationTabs/>
     <div className="app-container">
-      <h1>Recruitment Pipeline</h1>
       <div className="kanban">
         {stages.map(stage => (
           <Column

@@ -1,0 +1,29 @@
+.navigation-tabs {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background-color: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+  overflow-x: auto;
+}
+
+.tab-item {
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.3s, color 0.3s;
+}
+
+.tab-item:hover {
+  color: #007aff;
+}
+
+.tab-item.active {
+  border-bottom: 2px solid #007aff;
+  color: #007aff;
+}

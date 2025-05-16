@@ -3,8 +3,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #ffffff;
+  background-color: #000000;
   border-bottom: 1px solid #e5e7eb;
+  color: rgb(255, 255, 255);
 }
 
 .header-left {
@@ -21,7 +22,7 @@
 .title {
   font-size: 18px;
   font-weight: bold;
-  color: #333;
+  color: #ffffff;
 }
 
 .header-center {
@@ -35,7 +36,7 @@
   font-size: 14px;
   padding: 0.5rem 1rem;
   cursor: pointer;
-  color: #555;
+  color: #ffffff;
 }
 
 .tab.active {

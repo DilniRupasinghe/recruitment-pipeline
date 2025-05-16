@@ -1,0 +1,68 @@
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  flex-wrap: wrap;
+}
+
+.job-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.job-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.job-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  color: #777;
+  font-size: 14px;
+}
+
+.job-status {
+  background-color: #e0f4ff;
+  color: #007aff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.job-meta {
+  color: #666;
+}
+
+.job-header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.job-count {
+  font-size: 14px;
+  color: #777;
+}
+
+.share-button {
+  background-color: #007aff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.share-button:hover {
+  background-color: #005bb5;
+}
